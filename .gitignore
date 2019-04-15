@@ -3,3 +3,4 @@ code/logs/
 code/chrome-win/
 **/*.lock
 code/*.png
+code/**/*.png
