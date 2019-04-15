@@ -1,0 +1,4 @@
+code/node_modules/
+code/logs/
+code/chrome-win/
+**/*.lock
