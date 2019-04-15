@@ -115,7 +115,6 @@ module.exports = {
                 height:result.height
             }
         })
-        console.log('hahaha')
         let data = {
             code:1,
             maintainId,
