@@ -104,10 +104,11 @@ module.exports = {
             pic.left = table.offsetLeft;
             pic.width = table.offsetWidth;
             pic.height = table.offsetHeight;
+            pic.name = document.querySelector(".x124").textContent + document.querySelector(".x147").textContent;
             return pic
         });
         await page.screenshot({
-            path:'path.png',
+            path:`formJpg/${result.name}.png`,
             clip:{
                 x:result.left,
                 y:result.top,
