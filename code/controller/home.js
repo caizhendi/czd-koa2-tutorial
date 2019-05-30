@@ -91,12 +91,12 @@ module.exports = {
             // headless:false
         });
         const page = await browser.newPage();
-        await page.goto('http://139.159.237.90:9090/login.jsp');
+        await page.goto('http://114.116.17.145:7080/login.jsp');
         await page.click("#btn");
         await page.waitForNavigation({
             waitUntil: 'load'
         });
-        await page.goto(`http://139.159.237.90:9090/send/toShowExcel?maintainId=${maintainId}&formId=${formId}`,{waitUntil:'networkidle0'});
+        await page.goto(`http://114.116.17.145:7080/send/toShowExcel?maintainId=${maintainId}&formId=${formId}`,{waitUntil:'networkidle0'});
         const result = await page.evaluate(() => {
             let table = document.querySelector('table');
             let pic = {};
